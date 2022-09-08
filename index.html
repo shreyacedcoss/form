@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <body>
+      <label>Please enter your weight</label>
+      <input type="text" name="weight" id="weight" />
+
+      <label>Please enter your age</label>
+      <input type="text" name="year" id="year" />
+
+      <input type="submit" value="Submit" onclick="validate()" />
+      <div id="result"></div>
+      <script>
+        function validate() {
+            var weight=document.getElementById('weight').value;
+            var year=document.getElementById('year').value;
+            console.log("Weight "+weight);
+            console.log("Age "+year);
+            if(((year>=5)&&(year<=7))&&((weight>=15)&&(weight<=20)))
+            {
+                document.getElementById('result').innerHTML="Perfect";
+            }
+            else if(weight>20)
+            {
+                document.getElementById('result').innerHTML="over weight";
+            }
+            else if(weight<15)
+            {
+                document.getElementById('result').innerHTML="under weight";
+            }
+            if(((year>=8)&&(year<=10))&&((weight>=21)&&(weight<=25)))
+            {
+                document.getElementById('result').innerHTML="Perfect";
+            }
+            else if(weight>25)
+            {
+                document.getElementById('result').innerHTML="over weight";
+            }
+            else if(weight<21)
+            {
+                document.getElementById('result').innerHTML="under weight";
+            }
+            if(((year>=11)&&(year<=15))&&((weight>=26)&&(weight<=30)))
+            {
+                document.getElementById('result').innerHTML="Perfect";
+            }
+            else if(weight>30)
+            {
+                document.getElementById('result').innerHTML="over weight";
+            }
+            else if(weight<26)
+            {
+                document.getElementById('result').innerHTML="under weight";
+            }
+            if(((year>=16)&&(year<=20))&&((weight>=15)&&(weight<=20)))
+            {
+                document.getElementById('result').innerHTML="Perfect";
+            }
+            else if(weight>40)
+            {
+                document.getElementById('result').innerHTML="over weight";
+            }
+            else if(weight<31)
+            {
+                document.getElementById('result').innerHTML="under weight";
+            }
+            else{
+            document.getElementById('result').innerHTML="incorrect data";
+            }
+
+
+        }
+      </script>
+    </body>
+  </body>
+</html>
