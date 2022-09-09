@@ -22,11 +22,11 @@
             var year=document.getElementById('year').value;
             console.log("Weight "+weight);
             console.log("Age "+year);
-            if(((year>=5)&&(year<=7))&&((weight>=15)&&(weight<=20)))
-            {
-                document.getElementById('result').innerHTML="Perfect";
-            }
-            else if(weight>20)
+          if(year < 5){
+            document.getElementById('result').innerHTML="Enter age 5 to 20";
+          }
+          else if(year >= 5 && year <= 7){
+            if(weight>20)
             {
                 document.getElementById('result').innerHTML="over weight";
             }
@@ -34,11 +34,12 @@
             {
                 document.getElementById('result').innerHTML="under weight";
             }
-            if(((year>=8)&&(year<=10))&&((weight>=21)&&(weight<=25)))
-            {
-                document.getElementById('result').innerHTML="Perfect";
+              else{
+                  document.getElementById('result').innerHTML="Perfect";
             }
-            else if(weight>25)
+          }
+          else if(year >= 8 && year <= 10){
+            if(weight>25)
             {
                 document.getElementById('result').innerHTML="over weight";
             }
@@ -46,11 +47,14 @@
             {
                 document.getElementById('result').innerHTML="under weight";
             }
-            if(((year>=11)&&(year<=15))&&((weight>=26)&&(weight<=30)))
-            {
-                document.getElementById('result').innerHTML="Perfect";
+              else{
+                  document.getElementById('result').innerHTML="Perfect";
             }
-            else if(weight>30)
+            
+            
+          }
+          else if(year >= 11 && year <= 15){
+            if(weight>30)
             {
                 document.getElementById('result').innerHTML="over weight";
             }
@@ -58,11 +62,13 @@
             {
                 document.getElementById('result').innerHTML="under weight";
             }
-            if(((year>=16)&&(year<=20))&&((weight>=15)&&(weight<=20)))
-            {
-                document.getElementById('result').innerHTML="Perfect";
+              else{
+                  document.getElementById('result').innerHTML="Perfect";
             }
-            else if(weight>40)
+
+          }
+          else if(year >= 16 && year <= 20){
+            if(weight>40)
             {
                 document.getElementById('result').innerHTML="over weight";
             }
@@ -70,9 +76,82 @@
             {
                 document.getElementById('result').innerHTML="under weight";
             }
-            else{
-            document.getElementById('result').innerHTML="incorrect data";
+              else{
+                  document.getElementById('result').innerHTML="Perfect";
             }
+
+          }
+          else{
+            document.getElementById('result').innerHTML="Enter age 5 to 20";
+          }
+            //  if(((year>=5)&&(year<=7))&&((weight>=15)&&(weight<=20)))
+            //  {
+            //     if(weight>20)
+            //    {
+            //         document.getElementById('result').innerHTML="over weight";
+            //     }
+            //     else if(weight<15)
+            //     {
+            //         document.getElementById('result').innerHTML="under weight";
+            //     }
+            //      else{
+            //          document.getElementById('result').innerHTML="Perfect";
+            //     }
+            //  }
+            // if(((year>=8)&&(year<=10))&&((weight>=21)&&(weight<=25)))
+            // {
+            //     if(weight>25)
+            //     {
+            //         document.getElementById('result').innerHTML="over weight";
+            //     }
+            //     else if(weight<21)
+            //     {
+            //         document.getElementById('result').innerHTML="under weight";
+            //     }
+            //     else{
+            //         document.getElementById('result').innerHTML="Perfect";
+            //     }
+            // }
+           
+            // if(((year>=8)&&(year<=10))&&((weight>=21)&&(weight<=25)))
+            // {
+            //     document.getElementById('result').innerHTML="Perfect";
+            // }
+            // else if(weight>25)
+            // {
+            //     document.getElementById('result').innerHTML="over weight";
+            // }
+            // else if(weight<21)
+            // {
+            //     document.getElementById('result').innerHTML="under weight";
+            // }
+            // if(((year>=11)&&(year<=15))&&((weight>=26)&&(weight<=30)))
+            // {
+            //     document.getElementById('result').innerHTML="Perfect";
+            // }
+            // else if(weight>30)
+            // {
+            //     document.getElementById('result').innerHTML="over weight";
+            // }
+            // else if(weight<26)
+            // {
+            //     document.getElementById('result').innerHTML="under weight";
+            // }
+            // if(((year>=16)&&(year<=20))&&((weight>=15)&&(weight<=20)))
+            // {
+            //     document.getElementById('result').innerHTML="Perfect";
+            // }
+            // else if(weight>40)
+            // {
+            //     document.getElementById('result').innerHTML="over weight";
+            // }
+            // else if(weight<31)
+            // {
+            //     document.getElementById('result').innerHTML="under weight";
+            // }
+            // else{
+            // document.getElementById('result').innerHTML="incorrect data";
+            // }
 
 
         }
